@@ -1,0 +1,64 @@
+.container {
+    width: 320px;
+    height: 16rem;
+    position: relative;
+    transition: transform .6s ease-in-out;
+}
+
+.backgroundImage{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    max-height: 18rem;
+}
+
+.container:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.textBox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    position: relative;
+    padding: 1rem 1.4rem;
+}
+
+.textBox:hover {
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+.textBox i {
+    align-self: center;
+    margin-top: .3rem;
+}
+
+.textBox p, .textBox h4 {
+    padding: .1rem 0;
+}
+
+.textBox h4, .textBox p, .textBox i {
+    inset: 0;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s ease-in-out .3s;
+}
+
+.textBox:hover h4 {
+    transform: translateY(-15px);
+    opacity: 1;
+}
+
+.textBox:hover p {
+    transform: translateY(-15px);
+    opacity: 1;
+}
+
+.textBox:hover i {
+    transform: translateY(-15px);
+    opacity: 1;
+}
